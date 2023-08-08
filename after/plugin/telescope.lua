@@ -12,6 +12,7 @@ telescope.setup({
             "__pycache__",
             ".DS_Store",
             ".vscode",
+            "CMakeFiles",
         },
     },
     pickers = {
