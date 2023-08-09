@@ -13,6 +13,7 @@ telescope.setup({
             ".DS_Store",
             ".vscode",
             "CMakeFiles",
+            ".solid",
         },
     },
     pickers = {
