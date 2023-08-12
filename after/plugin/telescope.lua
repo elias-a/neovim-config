@@ -14,6 +14,7 @@ telescope.setup({
             ".vscode",
             "CMakeFiles",
             ".solid",
+            "ios/Pods",
         },
     },
     pickers = {
