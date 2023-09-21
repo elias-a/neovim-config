@@ -15,6 +15,11 @@ telescope.setup({
             "CMakeFiles",
             ".solid",
             "ios/Pods",
+            ".tox",
+            ".pytest_cache",
+            ".eggs",
+            "*.egg-info",
+            ".idea",
         },
     },
     pickers = {
