@@ -19,6 +19,6 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "py",
+  pattern = { "py", "sql" },
   command = "setlocal shiftwidth=4 tabstop=4 softtabstop=4"
 })
