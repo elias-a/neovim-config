@@ -22,3 +22,8 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = { "py", "sql" },
   command = "setlocal shiftwidth=4 tabstop=4 softtabstop=4"
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "tex" },
+  command = "setlocal shiftwidth=3 tabstop=3 softtabstop=3"
+})
