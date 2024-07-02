@@ -25,6 +25,8 @@ require("packer").startup(function(use)
 		}}
 	}
 
+  use("sakhnik/nvim-gdb")
+
     use {                                                                         
         "nvim-treesitter/nvim-treesitter",
         run = function()
