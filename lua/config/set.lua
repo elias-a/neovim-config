@@ -24,6 +24,6 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "tex" },
+  pattern = { "tex", "lua" },
   command = "setlocal shiftwidth=3 tabstop=3 softtabstop=3"
 })
