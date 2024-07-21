@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/elias-a/.local/share/nvim/site/pack/packer/start/nvim-gdb",
     url = "https://github.com/sakhnik/nvim-gdb"
   },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/Users/elias-a/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/elias-a/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",

@@ -43,6 +43,7 @@ require("packer").startup(function(use)
    use("nvim-treesitter/nvim-treesitter-context")
    use("tpope/vim-fugitive")
    use("lewis6991/gitsigns.nvim")
+   use("mfussenegger/nvim-lint")
    use {
       "VonHeikemen/lsp-zero.nvim",
       branch = "v1.x",
