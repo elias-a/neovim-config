@@ -17,13 +17,14 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
+vim.cmd [[colorscheme blue]]
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "py", "sql" },
-  command = "setlocal shiftwidth=4 tabstop=4 softtabstop=4"
+   pattern = { "py", "sql" },
+   command = "setlocal shiftwidth=4 tabstop=4 softtabstop=4"
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "tex", "lua" },
-  command = "setlocal shiftwidth=3 tabstop=3 softtabstop=3"
+   pattern = { "tex", "lua" },
+   command = "setlocal shiftwidth=3 tabstop=3 softtabstop=3"
 })
