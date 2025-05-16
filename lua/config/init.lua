@@ -44,21 +44,6 @@ require("packer").startup(function(use)
    use("tpope/vim-fugitive")
    use("lewis6991/gitsigns.nvim")
    use("mfussenegger/nvim-lint")
-   use {
-      "VonHeikemen/lsp-zero.nvim",
-      branch = "v1.x",
-      requires = {
-         { "neovim/nvim-lspconfig" },
-         { "williamboman/mason.nvim" },
-         { "williamboman/mason-lspconfig.nvim" },
-         { "hrsh7th/nvim-cmp" },
-         { "hrsh7th/cmp-buffer" },
-         { "hrsh7th/cmp-path" },
-         { "saadparwaiz1/cmp_luasnip" },
-         { "hrsh7th/cmp-nvim-lsp" },
-         { "hrsh7th/cmp-nvim-lua" },
-      },
-   }
    use({
       "iamcco/markdown-preview.nvim",
       run = function() vim.fn["mkdp#util#install"]() end,
