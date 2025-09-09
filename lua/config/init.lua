@@ -54,4 +54,15 @@ require("packer").startup(function(use)
       setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
       ft = { "markdown" },
    })
+
+   use({
+      "stevearc/conform.nvim",
+      config = function()
+         require("conform").setup({
+            formatters_by_ft = {
+               cpp = { "clang-format" },
+            },
+         })
+      end
+   })
 end)
