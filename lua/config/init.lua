@@ -33,10 +33,24 @@ require("packer").startup(function(use)
    use("sakhnik/nvim-gdb")
    use {
       "nvim-treesitter/nvim-treesitter",
-      run = function()
-         local ts_update = require("nvim-treesitter.install")
-            .update({ with_sync = true })
-         ts_update()
+      run = ":TSUpdate",
+      config = function()
+         require"nvim-treesitter.configs".setup {
+            ensure_installed = {
+               "vimdoc",
+               "lua",
+               "javascript",
+               "typescript",
+               "c",
+               "python",
+            },
+            sync_install = false,
+            auto_install = true,
+            highlight = {
+               enable = true,
+               additional_vim_regex_highlighting = false,
+            },
+         }
       end
    }
    use("nvim-treesitter/playground")
