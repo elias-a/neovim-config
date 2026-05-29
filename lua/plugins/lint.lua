@@ -17,8 +17,10 @@ return {
          vim.api.nvim_create_autocmd(
             { "BufWritePost" },
             {
-               callback = function()
-                  lint.try_lint()
+               callback = function(args)
+                  require("lint").try_lint(nil, {
+                     ignore_errors = true,
+                  })
                end,
             }
          )
