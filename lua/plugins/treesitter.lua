@@ -5,7 +5,13 @@ return {
       build = ":TSUpdate",
       event = { "BufReadPre", "BufNewFile" },
       init = function()
+         local highlight_disabled = {
+            sql = true,
+         }
          local highlight = function(bufnr, lang)
+            if highlight_disabled[lang] then
+               return
+            end
             if not vim.treesitter.language.add(lang) then
                return vim.notify(
                   string.format("treesitter cannot load parser for language: %s", lang),
